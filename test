@@ -1,2 +1,16 @@
-google_service-account: abc@iam.gservice.com
-secret key : karthuks
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: my-service-account
+  namespace: my-namespace
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: my-service-account-key
+  namespace: my-namespace
+type: kubernetes.io/service-account-token
+data:
+  # This is a base64-encoded representation of the Service Account token
+  # You will need to replace this value with the actual base64-encoded token
+  token: "helloworld"
