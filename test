@@ -14,3 +14,4 @@ data:
   # This is a base64-encoded representation of the Service Account token
   # You will need to replace this value with the actual base64-encoded token
   token: "helloworld"
+  export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMAAA
