@@ -1,9 +1,5 @@
-resource "google_service_account" "myaccount" {
-  account_id   = "myaccount"
-  display_name = "My Service Account"
-}
-
-resource "google_service_account_key" "mykey" {
-  service_account_id = google_service_account.myaccount.name
-  public_key_type    = "a2FydGhpawo="
+provider "aws" {
+  region     = "us-west-2"
+  access_key = "my-access-key"
+  secret_key = "my-secret-key"
 }
