@@ -1,5 +1,5 @@
 provider "aws" {
   region     = "us-west-2"
-  access_key = "a2FydGhpawo="
+  AWS_ACCESS_KEY_ID = "a2FydGhpawo="
   secret_key = "my-secret-key"
 }
